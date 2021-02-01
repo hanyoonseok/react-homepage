@@ -1,9 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Nav';
-import Main from './Main';
 import Home from './Home';
-import Skin from './Skin';
+import Services from './Services';
+import Products from './Products';
+import Signup from './Signup';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         <Nav/>
         <Switch>
           <Route path='/' exact component={Home}/>
+          <Route path='/services' component={Services}/>
+          <Route path='/products' component={Products}/>
+          <Route path='/sign-up' component={Signup}/>
         </Switch>
       </Router>
     </section>
