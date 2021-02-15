@@ -585,3 +585,28 @@ video{
           flex-direction: column;
       }
   }
+  .slider {
+    height:20px;
+  }
+  .slides {
+    position: relative;
+    
+  }
+  .slides .slick-prev, .slick-next {
+    position: absolute;
+    z-index: 999;
+    color:black;
+    top: 50%;
+  }
+  .slides .slick-prev {
+    left: 5%;
+  }
+  .slides .slick-next {
+    right: 5%;
+  }
+
+  .swiper-container{
+    height:100px;
+    align-items: center;
+    justify-content: center;
+  }
